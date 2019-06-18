@@ -67,8 +67,8 @@ public class Sample01Translation extends RelativeLayout {
                         break;
                     case 4:
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                            imageView.animate().translationZ(Utils.dpToPixel(15));
-                        }
+                        imageView.animate().translationZ(Utils.dpToPixel(15));
+                    }
                         break;
                     case 5:
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

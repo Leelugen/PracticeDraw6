@@ -18,6 +18,8 @@ public class Practice06Duration extends LinearLayout {
     Button animateBt;
     ImageView imageView;
 
+    boolean isTranslate = false;
+
     int duration = 300;
 
     public Practice06Duration(Context context) {
@@ -65,6 +67,12 @@ public class Practice06Duration extends LinearLayout {
             @Override
             public void onClick(View v) {
                 // TODO 在这里处理点击事件，执行动画。记得使用 `setDuration(duration)` 来设置动画的时长。
+                if (!isTranslate){
+                imageView.animate().translationX(200).setDuration(duration);
+                } else{
+                  imageView.animate().translationX(0).setDuration(duration);
+                }
+                isTranslate = !isTranslate;
             }
         });
     }
